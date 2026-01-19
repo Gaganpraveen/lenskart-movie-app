@@ -1,21 +1,15 @@
-# Cineverse 
+# Cineverse
 
 A clean, production-ready movie discovery app built with Flutter, powered by TMDB API.
 
 ## Features
 
-- **Browse Movies** - Popular movies grid with poster, name, and genre
-- **Search** - Real-time search using TMDB search API
-- **Favourites** - Save movies to your favourites list
-- **Watchlist** - Add movies to watch later
-- **Movie Details** - Banner, overview, release date, genre, circular rating indicator
-- **Play Now** - In-app notification when "Play Now" is tapped
-
-## Screenshots
-
-| Movies | Detail | Favourites |
-|--------|--------|------------|
-| Grid view with search | Full movie info | Saved movies |
+- Browse Movies - Popular movies grid with poster, name, and genre
+- Search - Real-time search using TMDB search API
+- Favourites - Save movies to your favourites list
+- Watchlist - Add movies to watch later
+- Movie Details - Banner, overview, release date, genre, circular rating indicator
+- Play Now - In-app notification when "Play Now" is tapped
 
 ## Tech Stack
 
@@ -26,17 +20,16 @@ A clean, production-ready movie discovery app built with Flutter, powered by TMD
 - flutter_local_notifications
 
 ## Project Structure
-
 ```
 lib/
 ├── main.dart
 ├── core/constants/
-│   └── api_config.dart      # API configuration
+│   └── api_config.dart
 ├── models/
-│   └── movie.dart           # Data models
+│   └── movie.dart
 ├── services/
-│   ├── movie_service.dart   # TMDB API calls
-│   ├── storage_service.dart # Local persistence
+│   ├── movie_service.dart
+│   ├── storage_service.dart
 │   └── notification_service.dart
 ├── screens/
 │   ├── splash_screen.dart
@@ -55,40 +48,45 @@ lib/
 
 - Flutter SDK 3.0+
 - Android Studio / VS Code
-- TMDB API Key ([Get one here](https://www.themoviedb.org/settings/api))
+- TMDB API Key - Get one at https://www.themoviedb.org/settings/api
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
+1. Clone the repository
+```bash
    git clone https://github.com/yourusername/cineverse.git
    cd cineverse
-   ```
+```
 
-2. **Install dependencies**
-   ```bash
+2. Install dependencies
+```bash
    flutter pub get
-   ```
+```
 
-3. **Configure API Key**
-   
+3. Configure API Key
+
    Open `lib/core/constants/api_config.dart` and add your TMDB API key:
-   ```dart
+```dart
    static const String apiKey = 'YOUR_TMDB_API_KEY';
-   ```
+```
 
-4. **Run the app**
-   ```bash
+4. Run the app
+```bash
    flutter run
-   ```
+```
 
 ### Build APK
-
 ```bash
 flutter build apk --release
 ```
 
-APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
+APK location: `build/app/outputs/flutter-apk/app-release.apk`
+
+## States Handled
+
+- Loading state (spinner)
+- Empty state (placeholder message)
+- Error state (retry button)
 
 ## Assumptions
 
@@ -99,27 +97,8 @@ APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
 
 ## API Reference
 
-- Base URL: `https://api.themoviedb.org/3`
-- [TMDB API Documentation](https://developers.themoviedb.org/3)
-
-## API Key Setup
-
-- TMDB API key is intentionally **not committed**.
-- Add your key in:
-  `cineverse_app/lib/core/constants/api_config.dart`
-
-## Run Locally
-
-```bash
-flutter pub get
-flutter run
-
-
-## States Handled
-
-- Loading state (spinner)
-- Empty state (placeholder message)
-- Error state (retry button)
+- Base URL: https://api.themoviedb.org/3
+- Documentation: https://developers.themoviedb.org/3
 
 ## License
 
