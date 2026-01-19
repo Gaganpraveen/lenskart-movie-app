@@ -102,6 +102,19 @@ APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
 - Base URL: `https://api.themoviedb.org/3`
 - [TMDB API Documentation](https://developers.themoviedb.org/3)
 
+## API Key Setup
+
+- TMDB API key is intentionally **not committed**.
+- Add your key in:
+  `cineverse_app/lib/core/constants/api_config.dart`
+
+## Run Locally
+
+```bash
+flutter pub get
+flutter run
+
+
 ## States Handled
 
 - Loading state (spinner)
