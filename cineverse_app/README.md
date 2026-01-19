@@ -1,4 +1,4 @@
-# Cineverse 🎬
+# Cineverse 
 
 A clean, production-ready movie discovery app built with Flutter, powered by TMDB API.
 
@@ -104,9 +104,9 @@ APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
 
 ## States Handled
 
-- ✅ Loading state (spinner)
-- ✅ Empty state (placeholder message)
-- ✅ Error state (retry button)
+- Loading state (spinner)
+- Empty state (placeholder message)
+- Error state (retry button)
 
 ## License
 
