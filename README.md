@@ -5,7 +5,7 @@ A clean, production-ready movie discovery app built with Flutter, powered by TMD
 ## Features
 
 - Browse Movies - Popular movies grid with poster, name, and genre
-- Search - Real-time search using TMDB search API
+- Search - Real-time search using TMDB search API.
 - Favourites - Save movies to your favourites list
 - Watchlist - Add movies to watch later
 - Movie Details - Banner, overview, release date, genre, circular rating indicator
